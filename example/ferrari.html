@@ -8,55 +8,63 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
 
-    <nav id="myTopNav" class="navbar navbar-default">
-            <div class="container">
+    <nav id="myTopNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
 
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-
-                        <li><a href="index.html">index.html</a></li>
-                        <li><a href="ferrari.html">ferrari</a></li>
-
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Red <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="fruits/strawberries.html">fruits/strawberries.html</a></li>
-                                <li><a href="fruits/cherries.html">fruits/cherries.html</a></li>
-                                <li><a href="ferrari.html">ferrari.html</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Yellow <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="fruits/banana.html">fruits/banana.html</a></li>
-                                <li><a href="fruits/lemon.html">fruits/lemon.html</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fruits <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="fruits/banana.html">fruits/banana.html</a></li>
-                                <li><a href="fruits/lemon.html">fruits/lemon.html</a></li>
-                                <li><a href="fruits/strawberries.html">fruits/strawberries.html</a></li>
-                                <li><a href="fruits/cherries.html">fruits/cherries.html</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+                    <li><a href="index.html">index.html</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Red <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="fruits/strawberries.html">fruits/strawberries.html</a></li>
+                            <li><a href="fruits/cherries.html">fruits/cherries.html</a></li>
+                            <li><a href="ferrari.html">ferrari.html</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Yellow <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="fruits/banana.html">fruits/banana.html</a></li>
+                            <li><a href="fruits/lemon.html">fruits/lemon.html</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fruits <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="fruits/banana.html">fruits/banana.html</a></li>
+                            <li><a href="fruits/lemon.html">fruits/lemon.html</a></li>
+                            <li><a href="fruits/strawberries.html">fruits/strawberries.html</a></li>
+                            <li><a href="fruits/cherries.html">fruits/cherries.html</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ferrari anchors <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ferrari.html">ferrari.html</a></li>
+                            <li><a href="ferrari.html#f40">ferrari.html#f40</a></li>
+                            <li><a href="ferrari.html#testarossa">ferrari.html#testarossa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
     </nav>
 
     <div class="container">
@@ -71,7 +79,26 @@ $( document ).ready(
         bootstrapNav.refresh();
     }
 );</pre>
-      </div>
+    </div>
+
+    <h2><a name="testarossa">Testarossa</a> </h2>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet eros nec massa sodales, vitae dapibus quam tristique. Nulla facilisi. Nullam mollis, mauris a gravida placerat, neque ligula porttitor ipsum, vitae iaculis mauris nibh et tellus. Integer sit amet ipsum rhoncus, mattis neque tempus, ultricies orci. Fusce dui enim, auctor posuere aliquam a, imperdiet vitae sapien. Aliquam euismod ante sit amet risus eleifend porta. Sed in euismod mi. Nunc est metus, fermentum nec felis et, suscipit imperdiet felis. Ut eget massa sit amet mauris pellentesque finibus. Vestibulum sed mauris egestas eros tincidunt rutrum eu non nisl. Integer dignissim elit non feugiat elementum. Aliquam lobortis turpis ut nisi scelerisque, consequat ultrices ligula congue. Donec dignissim, justo scelerisque tincidunt viverra, ligula ipsum elementum mauris, ut vehicula libero ligula ac risus.
+    Praesent leo tellus, feugiat non magna eu, condimentum dapibus elit. Quisque pharetra arcu sit amet est convallis molestie. Aenean euismod, nisi placerat dapibus feugiat, augue odio placerat erat, et feugiat dui turpis quis risus. Cras ultrices et libero blandit pulvinar. Sed condimentum quis augue vitae lacinia. Aliquam commodo vitae urna sit amet interdum. Donec vitae faucibus purus. Pellentesque volutpat at massa eget scelerisque. Morbi magna neque, cursus sed blandit in, pellentesque sed odio. Nam iaculis volutpat luctus. Etiam eu sapien non nibh molestie fringilla. Phasellus vel libero quis mi sollicitudin sollicitudin et eu mauris. Nam tincidunt, nisi et hendrerit semper, nisi mauris ullamcorper lorem, non venenatis tortor neque sed enim. Nunc quis mi et arcu aliquet congue eu non ex.
+    Curabitur venenatis justo nec tellus vestibulum hendrerit. Sed vitae aliquam nunc. Nullam consectetur sem libero, ut tristique elit condimentum vel. In eget lectus vitae mauris fringilla fermentum. Nam commodo, orci a vulputate pretium, elit tellus semper diam, vitae porta magna turpis ac lacus. Ut elementum nulla nulla. Vivamus scelerisque tellus eu sodales facilisis. Fusce non porttitor massa, eu auctor velit. Morbi et libero et metus laoreet euismod. Donec sem nibh, pretium nec finibus eget, molestie in nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus at metus neque. Phasellus sollicitudin eleifend dui, vitae ullamcorper dolor elementum non. Sed sed orci magna.
+    Donec elementum auctor dui, ac malesuada nulla facilisis at. Vivamus dapibus sodales ex, sit amet posuere felis. Donec ultricies odio ut turpis euismod, et sodales odio cursus. Aliquam non erat in odio viverra iaculis at at massa. Nunc quis mi eros. Morbi at gravida felis, ut aliquam enim. Sed sagittis consectetur mollis. Aenean vestibulum mollis ipsum. Ut mattis ullamcorper feugiat. Sed faucibus fringilla metus nec tristique. Morbi risus metus, gravida id tempor at, mollis id ex. Proin ut venenatis quam. Vivamus id finibus tellus. Etiam sollicitudin velit turpis, at ultricies erat porta eu. Etiam dapibus nunc placerat finibus fringilla. Sed venenatis neque nec magna rutrum ultricies.
+    Nunc et aliquet arcu. Aliquam metus sem, tincidunt ac convallis quis, luctus et felis. Pellentesque condimentum lacinia libero, eget varius lectus pretium vitae. Maecenas a justo aliquam, iaculis ipsum vitae, rutrum leo. Donec vel pellentesque purus. Quisque fermentum dolor eget dictum placerat. Quisque ornare eu odio id posuere. Quisque venenatis eros eu posuere sollicitudin. Fusce sagittis est quis lacinia facilisis. Nunc rutrum neque vel condimentum malesuada. In hac habitasse platea dictumst.
+    </p>
+
+    <h2><a name="f40">F40</a> </h2>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet eros nec massa sodales, vitae dapibus quam tristique. Nulla facilisi. Nullam mollis, mauris a gravida placerat, neque ligula porttitor ipsum, vitae iaculis mauris nibh et tellus. Integer sit amet ipsum rhoncus, mattis neque tempus, ultricies orci. Fusce dui enim, auctor posuere aliquam a, imperdiet vitae sapien. Aliquam euismod ante sit amet risus eleifend porta. Sed in euismod mi. Nunc est metus, fermentum nec felis et, suscipit imperdiet felis. Ut eget massa sit amet mauris pellentesque finibus. Vestibulum sed mauris egestas eros tincidunt rutrum eu non nisl. Integer dignissim elit non feugiat elementum. Aliquam lobortis turpis ut nisi scelerisque, consequat ultrices ligula congue. Donec dignissim, justo scelerisque tincidunt viverra, ligula ipsum elementum mauris, ut vehicula libero ligula ac risus.
+    Praesent leo tellus, feugiat non magna eu, condimentum dapibus elit. Quisque pharetra arcu sit amet est convallis molestie. Aenean euismod, nisi placerat dapibus feugiat, augue odio placerat erat, et feugiat dui turpis quis risus. Cras ultrices et libero blandit pulvinar. Sed condimentum quis augue vitae lacinia. Aliquam commodo vitae urna sit amet interdum. Donec vitae faucibus purus. Pellentesque volutpat at massa eget scelerisque. Morbi magna neque, cursus sed blandit in, pellentesque sed odio. Nam iaculis volutpat luctus. Etiam eu sapien non nibh molestie fringilla. Phasellus vel libero quis mi sollicitudin sollicitudin et eu mauris. Nam tincidunt, nisi et hendrerit semper, nisi mauris ullamcorper lorem, non venenatis tortor neque sed enim. Nunc quis mi et arcu aliquet congue eu non ex.
+    Curabitur venenatis justo nec tellus vestibulum hendrerit. Sed vitae aliquam nunc. Nullam consectetur sem libero, ut tristique elit condimentum vel. In eget lectus vitae mauris fringilla fermentum. Nam commodo, orci a vulputate pretium, elit tellus semper diam, vitae porta magna turpis ac lacus. Ut elementum nulla nulla. Vivamus scelerisque tellus eu sodales facilisis. Fusce non porttitor massa, eu auctor velit. Morbi et libero et metus laoreet euismod. Donec sem nibh, pretium nec finibus eget, molestie in nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus at metus neque. Phasellus sollicitudin eleifend dui, vitae ullamcorper dolor elementum non. Sed sed orci magna.
+    Donec elementum auctor dui, ac malesuada nulla facilisis at. Vivamus dapibus sodales ex, sit amet posuere felis. Donec ultricies odio ut turpis euismod, et sodales odio cursus. Aliquam non erat in odio viverra iaculis at at massa. Nunc quis mi eros. Morbi at gravida felis, ut aliquam enim. Sed sagittis consectetur mollis. Aenean vestibulum mollis ipsum. Ut mattis ullamcorper feugiat. Sed faucibus fringilla metus nec tristique. Morbi risus metus, gravida id tempor at, mollis id ex. Proin ut venenatis quam. Vivamus id finibus tellus. Etiam sollicitudin velit turpis, at ultricies erat porta eu. Etiam dapibus nunc placerat finibus fringilla. Sed venenatis neque nec magna rutrum ultricies.
+    Nunc et aliquet arcu. Aliquam metus sem, tincidunt ac convallis quis, luctus et felis. Pellentesque condimentum lacinia libero, eget varius lectus pretium vitae. Maecenas a justo aliquam, iaculis ipsum vitae, rutrum leo. Donec vel pellentesque purus. Quisque fermentum dolor eget dictum placerat. Quisque ornare eu odio id posuere. Quisque venenatis eros eu posuere sollicitudin. Fusce sagittis est quis lacinia facilisis. Nunc rutrum neque vel condimentum malesuada. In hac habitasse platea dictumst.
+    </p>
+
     </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
