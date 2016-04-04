@@ -7,86 +7,74 @@
         <base>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     </head>
     <body>
 
     <nav id="myTopNav" class="navbar navbar-default">
-            <div class="container">
+        <div class="container">
 
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-
-                        <li><a href="index.html">index.html</a></li>
-                        <li><a href="index-2.html">index-2.html</a></li>
-                        <li><a href="directory/test-1.html">directory/test-1.html</a></li>
-
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-
-                                <li><a href="index.html">index.html</a></li>
-
-
-
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Link</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-            </div><!-- /.navbar-collapse -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+                    <li><a href="index.html">index.html</a></li>
+                    <li><a href="ferrari.html">ferrari</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Red <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="fruits/strawberries.html">fruits/strawberries.html</a></li>
+                            <li><a href="fruits/cherries.html">fruits/cherries.html</a></li>
+                            <li><a href="ferrari.html">ferrari.html</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Yellow <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="fruits/banana.html">fruits/banana.html</a></li>
+                            <li><a href="fruits/lemon.html">fruits/lemon.html</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fruits <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="fruits/banana.html">fruits/banana.html</a></li>
+                            <li><a href="fruits/lemon.html">fruits/lemon.html</a></li>
+                            <li><a href="fruits/strawberries.html">fruits/strawberries.html</a></li>
+                            <li><a href="fruits/cherries.html">fruits/cherries.html</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
     </nav>
+
     <div class="container">
         <div class="jumbotron">
         <h1>index.html</h1>
-        <p>BootstrapNavActive.js manage .active class on bootstrap nav items using javascript</p>
+        <p>BootstrapNavActive.js manages .active class on bootstrap nav items using javascript</p>
         <p><a class="btn btn-primary btn-lg" href="https://github.com/davidmars/bootstrapNavActive" role="button">GitHub page &raquo;</a></p>
             <pre class="prettyprint">
-
-                    $( document ).ready(
-                        function(){
-                            var bootstrapNav=new BootstrapNavActive($("#myTopNav"));
-                            bootstrapNav.refresh();
-                        }
-                    );
-            </pre>
+$( document ).ready(
+    function(){
+        var bootstrapNav=new BootstrapNavActive($("#myTopNav"));
+        bootstrapNav.refresh();
+    }
+);</pre>
       </div>
     </div>
-
-        <script src="js/vendor/jquery-1.11.2.min.js"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 
         <script src="../BootstrapNavActive.js"></script>
