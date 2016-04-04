@@ -79,7 +79,8 @@
             <pre class="prettyprint">
 $( document ).ready(
     function(){
-        var bootstrapNav=new BootstrapNavActive($("#myTopNav"));
+        //the ignoreAnchors option cause all #anchors in urls are ignored
+        new BootstrapNavActive($myTopNav,{ignoreAnchors:true});
     }
 );</pre>
     </div>
@@ -108,7 +109,7 @@ $( document ).ready(
 
 
         <script src="../BootstrapNavActive.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/main-anchors-disabled.js"></script>
 
     </body>
 </html>
