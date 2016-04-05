@@ -72,13 +72,128 @@
         <h1>index.html</h1>
         <p>BootstrapNavActive.js manages .active class on bootstrap nav items using javascript</p>
         <p><a class="btn btn-primary btn-lg" href="https://github.com/davidmars/bootstrapNavActive" role="button">GitHub page &raquo;</a></p>
-            <pre class="prettyprint">
+<pre class="prettyprint">
 $( document ).ready(
     function(){
         var bootstrapNav=new BootstrapNavActive($("#myTopNav"));
     }
 );</pre>
       </div>
+
+      <h1>Navbar, Tabs & Pills</h1>
+
+      <div class="well">
+          <h3>Same story</h3>
+        <p>As you can see it's the same stuff</p>
+      </div>
+
+        <ul class="nav nav-tabs" id="myTabs">
+
+            <li><a href="index.html">index.html</a></li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Red <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="fruits/strawberries.html">fruits/strawberries.html</a></li>
+                    <li><a href="fruits/cherries.html">fruits/cherries.html</a></li>
+                    <li><a href="ferrari.html">ferrari.html</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Yellow <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="fruits/banana.html">fruits/banana.html</a></li>
+                    <li><a href="fruits/lemon.html">fruits/lemon.html</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fruits <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="fruits/banana.html">fruits/banana.html</a></li>
+                    <li><a href="fruits/lemon.html">fruits/lemon.html</a></li>
+                    <li><a href="fruits/strawberries.html">fruits/strawberries.html</a></li>
+                    <li><a href="fruits/cherries.html">fruits/cherries.html</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ferrari anchors <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="ferrari.html">ferrari.html</a></li>
+                    <li><a href="ferrari.html#f40">ferrari.html#f40</a></li>
+                    <li><a href="ferrari.html#testarossa">ferrari.html#testarossa</a></li>
+                    <li class="divider"></li>
+                    <li><a href="ferrari-anchors-disabled.html">ferrari-anchors-disabled.html</a></li>
+                    <li><a href="ferrari-anchors-disabled.html#f40">ferrari-anchors-disabled.html#f40</a></li>
+                    <li><a href="ferrari-anchors-disabled.html#testarossa">ferrari-anchors-disabled.html#testarossa</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <br>
+
+<pre class="prettyprint">
+$( document ).ready(
+    function(){
+        var bootstrapTabs=new BootstrapNavActive($("#myTabs"));
+    }
+);</pre>
+
+
+        <ul class="nav nav-pills" id="myPills">
+
+            <li><a href="index.html">index.html</a></li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Red <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="fruits/strawberries.html">fruits/strawberries.html</a></li>
+                    <li><a href="fruits/cherries.html">fruits/cherries.html</a></li>
+                    <li><a href="ferrari.html">ferrari.html</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Yellow <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="fruits/banana.html">fruits/banana.html</a></li>
+                    <li><a href="fruits/lemon.html">fruits/lemon.html</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Fruits <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="fruits/banana.html">fruits/banana.html</a></li>
+                    <li><a href="fruits/lemon.html">fruits/lemon.html</a></li>
+                    <li><a href="fruits/strawberries.html">fruits/strawberries.html</a></li>
+                    <li><a href="fruits/cherries.html">fruits/cherries.html</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ferrari anchors <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="ferrari.html">ferrari.html</a></li>
+                    <li><a href="ferrari.html#f40">ferrari.html#f40</a></li>
+                    <li><a href="ferrari.html#testarossa">ferrari.html#testarossa</a></li>
+                    <li class="divider"></li>
+                    <li><a href="ferrari-anchors-disabled.html">ferrari-anchors-disabled.html</a></li>
+                    <li><a href="ferrari-anchors-disabled.html#f40">ferrari-anchors-disabled.html#f40</a></li>
+                    <li><a href="ferrari-anchors-disabled.html#testarossa">ferrari-anchors-disabled.html#testarossa</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <br>
+
+<pre class="prettyprint">
+$( document ).ready(
+    function(){
+        var bootstrapPills=new BootstrapNavActive($("#myPills"));
+    }
+);</pre>
+
+
+
+
+
     </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
