@@ -40,3 +40,37 @@ $( document ).ready(
 </script>
 
 ```
+
+## Options
+
+```html
+<script>
+$( document ).ready(
+    function(){
+        //the ignoreAnchors option cause all #anchors in urls are ignored
+        new BootstrapNavActive(
+          $myTopNav,
+          {
+            ignoreAnchors:true
+          }
+        );
+      }
+);
+</script>
+```
+
+```html
+<script>
+$( document ).ready(
+    function(){
+        //the ignoreQueryString option cause all ?some=params in urls are ignored
+        new BootstrapNavActive(
+          $myTopNav,
+          {
+            ignoreQueryString:true
+          }
+        );
+      }
+);
+</script>
+```
