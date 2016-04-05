@@ -16,13 +16,16 @@ var BootstrapNavActive=function($nav,options){
     }
 
 
-
+    /**
+     * Utilities...
+     * @type {{url: {reg: RegExp, parse: Function, removeQueryString: Function, removeAnchor: Function}}}
+     */
     var utils={
         url:{
             reg:/^([^?#]*)(\?{0,1}[^?#]*)(#{0,1}[^?#]*)$/,
             /**
-             *
-             * @param url
+             * Explode url string in 3 parts main url, query string, hash. If a component is not present the value will be empty
+             * @param {string} url
              * @returns {Array|{index: number, input: string}}
              */
             parse:function(url){
@@ -38,15 +41,12 @@ var BootstrapNavActive=function($nav,options){
                 return p[1]+p[3];
             },
             /**
-             * Removes query string from url
+             * Removes anchor string from url
              * @param {string} url
              * @returns {string}
              */
             removeAnchor:function(url){
-
-                console.log("zzzzz",url);
                 var p=utils.url.parse(url);
-                console.log("sssss",p[1]+p[2]);
                 return p[1]+p[2];
             }
         }
@@ -94,7 +94,7 @@ var BootstrapNavActive=function($nav,options){
                     linkHref=utils.url.removeAnchor(linkHref);
                     locHref=utils.url.removeAnchor(locHref);
                 }
-                console.log(linkHref===locHref,link);
+                //console.log(linkHref===locHref,link);
                 if(linkHref===locHref){
                     setActive($(this));
                 }
@@ -117,7 +117,10 @@ var BootstrapNavActive=function($nav,options){
 
 
 };
-
+/**
+ * Options settings for a BootstrapNavActive object
+ * @constructor
+ */
 var BootstrapNavActiveOption=function(){
     "use strict";
     /**
@@ -131,3 +134,5 @@ var BootstrapNavActiveOption=function(){
      */
     this.ignoreAnchors=false;
 };
+
+BootstrapNavActive.version="2016-04-05 06:18";
